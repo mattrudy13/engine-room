@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Engine Room</title>
+<meta name="description" content="Watch what happens under a query: join methods, broadcast vs shuffle, and window functions, raced step by step.">
+<meta name="theme-color" content="#16181b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;600;800&family=Chivo+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f2a93b" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 13l4-4"/><path d="M9 3h6"/></svg>
+    <b>Engine Room</b>
+  </a>
+  <nav class="tools" aria-label="Tools">
+    <a href="#" aria-current="page">Join Race</a>
+    <span>Delta log · soon</span>
+    <span>Plan reader · soon</span>
+  </nav>
+</header>
+<div class="layout">
+  <nav class="races" id="races" aria-label="Races"></nav>
+  <main id="race"><p class="muted">Loading…</p></main>
+</div>
+<footer>
+  Simulated: these count steps of work with the simple rules under "How the steps are counted", not real timings.
+  Your guesses are saved on this device. <button class="link" id="reset">Reset guesses</button>
+  · Practice the SQL in <a href="https://mattrudy13.github.io/sql-drills/">Query Workbook</a>.
+</footer>
+</body>
+</html>
